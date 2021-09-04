@@ -1,0 +1,38 @@
+:root {
+    --bg-button: #4e4e4e;
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+    color: white;
+}
+
+.button:active { /* quando clicar no botão*/
+    background-color: rgb(46, 46, 46);
+}
+
+.button.double { /* quando o botão ocupa duas posições */
+    grid-column: span 2;
+
+}
+
+.button.triple { /* quando o botão ocupa três posições*/
+    grid-column: span 3;
+
+}
+
+.button.operation { /* quando o botão representar uma operação*/
+    background-color: #fA8231; 
+    color: black;
+}
+
+.button.button.operation:active { /*Quando for uma operação e estiver ativo*/
+    background-color: #fa8231cc;
+
+}
